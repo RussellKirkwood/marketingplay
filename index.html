@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Play - Domains that Stick!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #34495e;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Main Content */
+        main {
+            background-color: white;
+            padding: 2rem 0;
+            min-height: 80vh;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            background-color: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .email-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .disclaimer {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+
+        /* Domain List */
+        .domain-section {
+            margin: 3rem 0;
+        }
+
+        .domain-category {
+            margin-bottom: 2rem;
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .domain-category h3 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        .domain-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .domain-item {
+            background-color: white;
+            padding: 0.8rem;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        .domain-item:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .special-domain {
+            background-color: #e8f5e8;
+            border: 2px solid #27ae60;
+            font-weight: bold;
+        }
+
+        .special-domain:hover {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .footer-contact {
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .domain-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Marketing Play</h1>
+            <p class="tagline">Domains that Stick!</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#domains">Domains For Sale</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">Who We Are</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section id="domains">
+                <h2 class="section-title">Domains that Stick!</h2>
+                
+                <div class="intro-text">
+                    <p>Imagine seeing a potential client on the street. You say "Hi, check out my business at WeeZee.com". Say no more as that potential client will surely go back to their office and remember WeeZee.com. Domain names are the single most important brand identity asset you can have.</p>
+                </div>
+
+                <p class="cta-text">Get your great domain name today!</p>
+
+                <div class="contact-info">
+                    <p>The following domain names are available for sale. Contact Russell via email at <a href="mailto:creatinggenius@gmail.com" class="email-link">creatinggenius@gmail.com</a>.</p>
+                    <p>State which domain name you are interested in and include your offer. Only serious offers will be considered.</p>
+                </div>
+
+                <div class="disclaimer">
+                    <p><strong>We are not resellers</strong>. We are Direct sellers. We own each domain listed below.</p>
+                </div>
+
+                <div class="domain-section">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Please see domain names listed below:</h3>
+
+                    <div class="domain-category">
+                        <h3>WeeZee Brand Domains</h3>
+                        <div class="domain-list">
+                            <div class="domain-item">WeeZee.com</div>
+                            <div class="domain-item">WeeZee.net</div>
+                            <div class="domain-item">WeeZee.org</div>
+                            <div class="domain-item">WeZee.com</div>
+                            <div class="domain-item">WeZee.net</div>
+                            <div class="domain-item">WeZee.org</div>
+                            <div class="domain-item">Wee-Zee.com</div>
+                            <div class="domain-item">Wee-Zee.net</div>
+                            <div class="domain-item">Wee-zee.org</div>
+                        </div>
+                    </div>
+
+                    <div class="domain-category">
+                        <h3>Sharp Body Parts Collection</h3>
+                        <div class="domain-list">
+                            <div class="domain-item">SharpTeeth.com</div>
+                            <div class="domain-item">SharpFeet.com</div>
+                            <div class="domain-item">SharpFoot.com</div>
+                            <div class="domain-item">SharpHand.com</div>
+                            <div class="domain-item">SharpHead.com</div>
+                            <div class="domain-item">SharpNose.com</div>
+                            <div class="domain-item">SharpMouth.com</div>
+                            <div class="domain-item">SharpThumb.com</div>
+                            <div class="domain-item">SharpArm.com</div>
+                        </div>
+                    </div>
+
+                    <div class="domain-category">
+                        <h3>Historical Figures</h3>
+                        <div class="domain-list">
+                            <div class="domain-item">cornelisvanderbilt.com</div>
+                            <div class="domain-item">corneliusvanderbilt.net</div>
+                            <div class="domain-item">corneliusvanderbilt.org</div>
+                            <div class="domain-item">Hettygreen.net</div>
+                        </div>
+                    </div>
+
+                    <div class="domain-category">
+                        <h3>Healthcare & Nursing</h3>
+                        <div class="domain-list">
+                            <div class="domain-item">NursingSchedules.com</div>
+                            <div class="domain-item">NursingBids.com</div>
+                            <div class="domain-item">NurseBids.com</div>
+                        </div>
+                    </div>
+
+                    <div class="domain-category">
+                        <h3>Shift & Employment</h3>
+                        <div class="domain-list">
+                            <div class="domain-item">ShiftPosting.com</div>
+                            <div class="domain-item">ShiftPost.com</div>
+                            <div class="domain-item">ShiftListings.com</div>
+                            <div class="domain-item">ShiftListing.com</div>
+                            <div class="domain-item special-domain">ShiftBids.com<br><small>(comes with operational website)</small></div>
+                        </div>
+                    </div>
+
+                    <div class="domain-category">
+                        <h3>Banking & Finance</h3>
+                        <div class="domain-list">
+                            <div class="domain-item">BankRecruiting.com</div>
+                            <div class="domain-item">Free-Banking.com</div>
+                        </div>
+                    </div>
+
+                    <div class="domain-category">
+                        <h3>Gaming & Entertainment</h3>
+                        <div class="domain-list">
+                            <div class="domain-item">iDeadPool.com</div>
+                            <div class="domain-item">eplague.com</div>
+                            <div class="domain-item">fearsilence.com</div>
+                            <div class="domain-item">fearsilent.com</div>
+                            <div class="domain-item">Worldzombiecouncil.com</div>
+                            <div class="domain-item">zombieworldcouncil.com</div>
+                        </div>
+                    </div>
+
+                    <div class="domain-category">
+                        <h3>Local & Specialty</h3>
+                        <div class="domain-list">
+                            <div class="domain-item">SaratogaDaily.com</div>
+                            <div class="domain-item">saratogacares.com</div>
+                            <div class="domain-item">Americanbrittanyspaniel.com</div>
+                            <div class="domain-item">Myprivatetexting.com</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Email: <a href="mailto:creatinggenius@gmail.com" class="email-link">creatinggenius@gmail.com</a></p>
+                    <p>Please include the domain name you're interested in and your offer.</p>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="contact-info">
+                    <h3>Who We Are</h3>
+                    <p>We are direct domain owners and sellers, not resellers. Each domain listed is owned by us and available for serious buyers.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-contact">
+                Contact Us: <a href="mailto:creatinggenius@gmail.com">creatinggenius@gmail.com</a>
+            </div>
+            <p>Copyright © 2025 Marketing Play</p>
+        </div>
+    </footer>
+</body>
+</html>
